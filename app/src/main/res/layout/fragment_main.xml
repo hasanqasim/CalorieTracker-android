@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:background="@drawable/fff">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="32dp"
+        android:textSize="22sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_cg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="128dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_calorieGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Set Calorie Goal"
+        android:gravity="center_horizontal"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_calorieGoal"
+        android:layout_centerHorizontal="true"
+        android:text="Enter" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textClock"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:format24Hour="hh:mm:ss a dd/MM/yyyy"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

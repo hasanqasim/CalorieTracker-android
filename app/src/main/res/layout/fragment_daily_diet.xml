@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/tv_spinner_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="Select Food Category:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Spinner
+        android:id="@+id/sp_food_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_spinner_one"/>
+    <TextView
+        android:id="@+id/tv_spinner_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_food_category"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Select Food Item:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Spinner
+        android:id="@+id/sp_food_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_spinner_two"/>
+    <EditText
+        android:id="@+id/et_serving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Serving Amount"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:layout_below="@+id/sp_food_item"/>
+
+    <Button
+        android:id="@+id/btn_dds_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_serving"
+        android:layout_marginTop="44dp"
+        android:text="Submit" />
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can't Find Food Item?"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_above="@+id/btn_search"/>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ask google"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

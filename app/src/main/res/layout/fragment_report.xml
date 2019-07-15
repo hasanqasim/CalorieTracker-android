@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="48dp">
+
+    <EditText
+        android:id="@+id/et_report_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:focusable="false"
+        android:hint="Select Date"/>
+    <Button
+        android:id="@+id/btn_get_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Get Pie Chart"
+        />
+    <Button
+        android:id="@+id/btn_get_bar_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Bar Chart"
+        />
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/et_report_date"
+        android:id="@+id/idPieChart"></com.github.mikephil.charting.charts.PieChart>
+</RelativeLayout>

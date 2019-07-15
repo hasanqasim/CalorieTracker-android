@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="48dp">
+
+    <EditText
+        android:id="@+id/et_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="Start Date"/>
+    <EditText
+        android:id="@+id/et_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_centerHorizontal="true"
+        android:hint="End Date"/>
+    <Button
+        android:id="@+id/btn_bar_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Get Bar Chart"/>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btn_bar_chart"
+        android:layout_height="match_parent"></com.github.mikephil.charting.charts.BarChart>
+</RelativeLayout>
